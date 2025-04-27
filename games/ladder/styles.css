@@ -178,4 +178,69 @@ input[type="text"] {
 .guesses-remaining.danger {
     color: #e74c3c;
     background-color: #fadbd8;
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%;
+        margin: 0;
+        padding: 1rem 0.5rem;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .game-info {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .game-board {
+        gap: 1rem;
+    }
+
+    .word-display {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .word {
+        min-width: 80px;
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .controls {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: stretch;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .controls button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
+
+    .history {
+        min-height: 60px;
+        padding: 0.5rem;
+        font-size: 0.95rem;
+    }
+
+    .guesses-remaining {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
 } 
