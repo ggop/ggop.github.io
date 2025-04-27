@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Ladder Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Word Ladder</h1>
+        <div class="game-info">
+            <p>Change one letter at a time to transform the start word into the target word.</p>
+            <p>Each intermediate word must be a valid word.</p>
+            <p>You have 10 guesses to reach the target word!</p>
+        </div>
+        <div class="game-board">
+            <div class="word-display">
+                <div class="word" id="start-word"></div>
+                <div class="word" id="current-word"></div>
+                <div class="word" id="target-word"></div>
+            </div>
+            <div class="controls">
+                <input type="text" id="word-input" placeholder="Enter your word">
+                <button id="submit-word">Submit</button>
+                <button id="hint-button">Hint (2 remaining)</button>
+                <button id="new-game">New Game</button>
+            </div>
+            <div class="guesses-remaining">Guesses remaining: <span id="guesses-left">10</span></div>
+            <div class="history" id="word-history"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

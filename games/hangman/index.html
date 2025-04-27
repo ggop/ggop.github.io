@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Letter Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>1 Letter Game</h1>
+        <div class="game-area">
+            <div class="word-display" id="wordDisplay"></div>
+            <div class="input-area">
+                <input type="text" id="letterInput" maxlength="1" placeholder="Enter a letter">
+                <button id="submitButton">Submit</button>
+            </div>
+            <div class="score-area">
+                <p>Score: <span id="score">0</span></p>
+                <p>Guesses Remaining: <span id="guesses">10</span></p>
+            </div>
+            <div class="rejected-letters">
+                <p>Rejected Letters: <span id="rejectedLetters"></span></p>
+            </div>
+            <div class="message" id="message"></div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html> 
